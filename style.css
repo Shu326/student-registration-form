@@ -1,0 +1,15 @@
+<style>
+    /* Optional minimal styling just to make it tidy (still HTML-only project allowed) */
+    body{font-family: system-ui, Arial, sans-serif; line-height:1.5; margin:24px; max-width: 900px}
+    header, footer{margin: 12px 0}
+    h1{margin-bottom: 4px}
+    form{border:1px solid #ddd; padding:16px; border-radius:8px}
+    fieldset{border:1px solid #ccc; padding:12px; border-radius:6px; margin-bottom:16px}
+    legend{padding:0 6px; font-weight:600}
+    label{display:inline-block; margin:6px 0 2px}
+    input, select, textarea{width:100%; padding:8px; border:1px solid #bbb; border-radius:6px}
+    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    .actions{display:flex; gap:12px; margin-top:8px}
+    small{display:block; color:#555}
+    nav a{font-size:14px}
+  </style>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A simple student registration form built with semantic HTML and HTML5 validation." />
+  <meta name="author" content="Shubham Rajput" />
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration Form</h1>
+    <p>Fill the details below to complete your registration.</p>
+    <nav><a href="#form">Skip to form</a></nav>
+  </header>
+
+  <main id="form">
+    <form action="#" method="post" aria-describedby="formHelp">
+      <small id="formHelp">Fields marked with * are required.</small>
+
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="row">
+          <div>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="first_name" placeholder="e.g., Shubham" required>
+          </div>
+          <div>
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="last_name" placeholder="e.g., Rajput" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div>
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+              <option value="">-- Select --</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <div class="row">
+          <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+          <div>
+            <label for="phone">Phone (10 digits) *</label>
+            <input type="tel" id="phone" name="phone" placeholder="9999999999" pattern="[0-9]{10}" required>
+            <small>Numbers only, no spaces.</small>
+          </div>
+        </div>
+
+        <label for="address">Address *</label>
+        <textarea id="address" name="address" rows="3" placeholder="House No, Street, City, PIN" required></textarea>
+      </fieldset>
+
+      <!-- Academic Details -->
+      <fieldset>
+        <legend>Academic Details</legend>
+
+        <div class="row">
+          <div>
+            <label for="course">Course Applying For *</label>
+            <select id="course" name="course" required>
+              <option value="">-- Select --</option>
+              <option value="BCA">BCA</option>
+              <option value="BSc CS">B.Sc. Computer Science</option>
+              <option value="B.Tech CSE">B.Tech (CSE)</option>
+              <option value="MCA">MCA</option>
+            </select>
+          </div>
+          <div>
+            <label for="yop">Year of Passing (12th) *</label>
+            <input type="number" id="yop" name="yop" min="2010" max="2030" placeholder="2023" required>
+          </div>
+        </div>
+
+        <label>Skills (select all that apply)</label>
+        <div class="row">
+          <div>
+            <input type="checkbox" id="skill-html" name="skills" value="HTML">
+            <label for="skill-html">HTML</label>
+          </div>
+          <div>
+            <input type="checkbox" id="skill-css" name="skills" value="CSS">
+            <label for="skill-css">CSS</label>
+          </div>
+          <div>
+            <input type="checkbox" id="skill-js" name="skills" value="JavaScript">
+            <label for="skill-js">JavaScript</label>
+          </div>
+          <div>
+            <input type="checkbox" id="skill-java" name="skills" value="Java">
+            <label for="skill-java">Java</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Upload & Notes -->
+      <fieldset>
+        <legend>Uploads</legend>
+        <div class="row">
+          <div>
+            <label for="photo">Profile Photo (optional)</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </div>
+          <div>
+            <label for="marksheet">12th Marksheet (PDF)</label>
+            <input type="file" id="marksheet" name="marksheet" accept="application/pdf">
+          </div>
+        </div>
+
+        <label for="about">About Yourself</label>
+        <textarea id="about" name="about" rows="4" placeholder="Tell us about your interests, goals, and achievements."></textarea>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Shubham Rajput</p>
+  </footer>
+
+</body>
+</html>
